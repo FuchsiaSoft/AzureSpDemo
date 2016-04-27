@@ -48,6 +48,9 @@
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[parameters('sqlVMName')]",
       "location": "[parameters('location')]",
+      "tags": {
+        "mySillyTag": "mySillyValue"
+      },
       "properties": {
         "hardwareProfile": {
           "vmSize": "[parameters('sqlVMSize')]"
