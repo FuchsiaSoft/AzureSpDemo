@@ -26,7 +26,6 @@
   <!-- vertag<:>end -->
   <ItemGroup>
     <Folder Include="Scripts\" />
-    <Folder Include="Templates\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Deployment.targets">
@@ -35,6 +34,29 @@
     <Content Include="Scripts\Deploy-AzureResourceGroup.ps1" />
     <Content Include="Templates\azuredeploy.json" />
     <Content Include="Templates\azuredeploy.parameters.json" />
+    <None Include="Templates\.ci_skip" />
+    <None Include="Templates\availabilitySets.json" />
+    <None Include="Templates\configuringSharepoint.json" />
+    <None Include="Templates\configuringSQL.json" />
+    <None Include="Templates\createUiDefinition.json" />
+    <None Include="Templates\creatingNICS.json" />
+    <None Include="Templates\creatingPublicIPs.json" />
+    <None Include="Templates\dsc\ConfigureSharePointServer.ps1.zip" />
+    <None Include="Templates\dsc\ConfigureSqlServer.ps1.zip" />
+    <None Include="Templates\dsc\CreateADPDC.ps1.zip" />
+    <None Include="Templates\dsc\PrepareSharePointServer.ps1.zip" />
+    <None Include="Templates\dsc\PrepareSqlServer.ps1.zip" />
+    <None Include="Templates\loadBalancers.json" />
+    <None Include="Templates\metadata.json" />
+    <None Include="Templates\provisioningDomainController.json" />
+    <None Include="Templates\provisioningSharepoint.json" />
+    <None Include="Templates\provisioningSQL.json" />
+    <None Include="Templates\publicip-existing.json" />
+    <None Include="Templates\publicip-new.json" />
+    <None Include="Templates\README.md" />
+    <None Include="Templates\storageAccount.json" />
+    <None Include="Templates\vnet-new.json" />
+    <None Include="Templates\vnet-with-dns-server.json" />
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>
